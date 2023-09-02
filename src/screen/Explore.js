@@ -4,11 +4,11 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import BrellaNotificationScreen from './BrellaNotificationScreen';
 import TraNotificationScreen from './TraNotificationScreen';
 import WazacomNotificationScreen from './WazacomNotificationScreen';
-
+import ComplianceNotificationScreen from './BrellaNotificationScreen';
 
 const Tab = createMaterialTopTabNavigator();
 
-export default function Explore() {
+export default function Notifications() {
   return (
     <Tab.Navigator 
     screenOptions={{
@@ -16,9 +16,10 @@ export default function Explore() {
       tabBarStyle: { elevation:0 },
     }}
     >
-      <Tab.Screen name="Brella" component={BrellaNotificationScreen} />
-      <Tab.Screen name="Tra" component={TraNotificationScreen} />
+
+      <Tab.Screen name="Compliance" component={ComplianceNotificationScreen} />
       <Tab.Screen name="Waza" component={WazacomNotificationScreen} />
+
     </Tab.Navigator>
   )
 }

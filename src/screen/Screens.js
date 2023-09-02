@@ -54,8 +54,9 @@ export default function AppScreens({navigation}) {
                     shadowOpacity: 0
                   },
                 })} />
-
+        
                 <Stack.Screen name="Dashboard" options={{headerShown:false}} component={Activities} />
+
                 <Stack.Screen name="Home" component={Home} />
                 <Stack.Screen name="Invites" options={{title:'My Business',headerStyle:{elevation:0,shadowColor:'none'}}} component={Invites} />
 

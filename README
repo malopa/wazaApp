@@ -1,0 +1,12 @@
+#node versio 14
+#nvm (node version manager) control node version
+#expo testing kit
+#nvm install 14
+#nvm use 14
+#how to install react project
+
+1 npm install
+2 npx expo install
+3 npx expo start
+# .TanStack Query v4 caching mechanism .. redis.. backend
+#native base.. 

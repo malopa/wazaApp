@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const BASE_URL = `http://10.200.207.25:3000/`;
+export const BASE_URL = `http://192.168.97.173:3100/`;
 // export const BASE_URL = `https://wazacom-api.onrender.com/`;
 
 
@@ -257,7 +257,6 @@ export const getDailySales = async () =>{
     try{
         const res = await fetch(`${BASE_URL}sales/daily`)
         const body = await res.json();
-
         return body;
     }catch(err){
             console.log("err",err.response)

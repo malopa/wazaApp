@@ -23,11 +23,16 @@ const newColorTheme = {
 export default function App() {
   return (
     <Provider store={store}>
+      {/*  */}
       <PersistGate persistor={persistor}>
-          <NativeBaseProvider  extendTheme={newColorTheme}>
+        {/* native base for ui */}
+          <NativeBaseProvider  extendTheme={newColorTheme}> 
+          {/* QueryClientProvider for api */}
               <QueryClientProvider client={queryClient}>
                 <StateAuthProvider>
+                  
                   <AppContainer />
+
                 </StateAuthProvider>
               </QueryClientProvider>
         </NativeBaseProvider>

@@ -8,6 +8,7 @@ import FontAwesomeIcons from 'react-native-vector-icons/FontAwesome';
 import { BlurView } from 'expo-blur';
 import { StyleSheet } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import Notifications from './Explore';
 
 const Tab = createBottomTabNavigator();
 
@@ -33,7 +34,7 @@ export default function Activities() {
         color: "warmGray.50"
       }} />,
       headerStyle:{shadowColor:'none',elevation:0}}} 
-      component={Explore} />
+      component={Notifications} />
 
       <Tab.Screen name="Settings" 
       options={{title:"Settings",
